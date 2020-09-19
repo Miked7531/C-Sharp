@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "booldui", "booldui\booldui.csproj", "{DECEC612-1789-4259-8CC3-4A1058BA770C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DECEC612-1789-4259-8CC3-4A1058BA770C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECEC612-1789-4259-8CC3-4A1058BA770C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECEC612-1789-4259-8CC3-4A1058BA770C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECEC612-1789-4259-8CC3-4A1058BA770C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {494BE3EF-C049-41CE-B4AA-F470787E540A}
+	EndGlobalSection
+EndGlobal
