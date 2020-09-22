@@ -25,6 +25,16 @@ namespace Concatenatepara
             var concatInputs = userInput.ToUpper() + " " + userInput1 + " " + userInput2 + " " + userInput3;
             Console.Write(concatInputs);
             Console.ReadLine();
-        }
+
+            StringBuilder sb = new StringBuilder(userInput, 200);
+
+            Console.WriteLine(sb.Append(userInput1 + userInput2));
+
+            Console.WriteLine(sb.Append(userInput3));
+
+            Console.WriteLine(sb);
+            Console.ReadLine();
+
+        }   
     }
 }
