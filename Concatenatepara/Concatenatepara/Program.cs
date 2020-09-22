@@ -28,9 +28,9 @@ namespace Concatenatepara
 
             StringBuilder sb = new StringBuilder(userInput, 200);
 
-            Console.WriteLine(sb.Append(userInput1 + userInput2));
+            sb.Append(userInput1 + userInput2);
 
-            Console.WriteLine(sb.Append(userInput3));
+            sb.Append(userInput3);
 
             Console.WriteLine(sb);
             Console.ReadLine();
