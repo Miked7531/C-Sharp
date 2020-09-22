@@ -11,8 +11,8 @@ namespace Concatenatepara
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a sentence of your choice: ");
-            string userInput = string.ToUpper(Console.ReadLine());
-
+            string userInput = Console.ReadLine();
+            
             Console.WriteLine("Enter another sentence of your choice: ");
             string userInput1 = Console.ReadLine();
 
@@ -22,9 +22,9 @@ namespace Concatenatepara
             Console.WriteLine("Enter another sentence of your choice: ");
             string userInput3 = Console.ReadLine();
 
-            userInput += " "; userInput1 += " "; userInput2 += " "; userInput3 += " ";
+            var concatInputs = userInput.ToUpper() + " " + userInput1 + " " + userInput2 + " " + userInput3;
+            Console.Write(concatInputs);
             Console.ReadLine();
-           
         }
     }
 }
