@@ -16,7 +16,9 @@ namespace pg._223_basic_class
             numb.myAdd(y);
             numb.mySub(y);
             numb.myMulti(y);
-            Console.WriteLine();
+            Console.WriteLine(numb.myAdd(y));
+            Console.WriteLine(numb.mySub(y));
+            Console.WriteLine(numb.myMulti(y));
             Console.ReadLine();
         }
         
