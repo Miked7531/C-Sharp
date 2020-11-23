@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace pg._226
 {
@@ -12,13 +13,14 @@ namespace pg._226
         {
             return x + x;
         }
-        public double myAdd(double y)
+        public decimal myAdd(decimal y)
         {
             return y * y;
         }
-        public int myAdd(string z)
+        public int myAdd(string a)
         {
-            return Convert.ToInt32("z - z");
+            int sub = Convert.ToInt32(a);
+            return sub;
         }
     }
 }
