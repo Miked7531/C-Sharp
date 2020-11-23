@@ -11,18 +11,25 @@ namespace pg._226
         static void Main(string[] args)
         {
             Math numb = new Math();
+
             Console.WriteLine("Enter a number: ");
             int x = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Enter a decimal: ");
-            double y = Convert.ToDouble(Console.ReadLine());
+            decimal y = Convert.ToDecimal(Console.ReadLine());
+
             Console.WriteLine("Enter a number: ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            var a = Console.ReadLine();
+
             int result = numb.myAdd(x);
             Console.WriteLine(result);
-            double result1 = Convert.ToInt32(numb.myAdd((int)y));
+
+            int result1 = numb.myAdd(y);
             Console.WriteLine(result1);
-            int result2 = numb.myAdd(a - a);
+
+            int result2 = numb.myAdd(a);
             Console.WriteLine(result2);
+
             Console.ReadLine();
             
         }

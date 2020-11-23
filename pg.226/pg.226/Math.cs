@@ -13,9 +13,9 @@ namespace pg._226
         {
             return x + x;
         }
-        public decimal myAdd(decimal y)
+        public int myAdd(decimal y)
         {
-            return y * y;
+            return Convert.ToInt32(y * y);
         }
         public int myAdd(string a)
         {
