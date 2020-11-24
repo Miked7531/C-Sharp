@@ -8,11 +8,9 @@ namespace pg._227
 {
     class twoTime
     {
-        public int myNumb(int x, int z, int y = 20)
+        public int myNumb(int x, int y = 20)
         {
-            return x + z + y;
-        
-
+            return x + y;
         }
     }
 }
