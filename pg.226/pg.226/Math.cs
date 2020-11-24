@@ -17,10 +17,13 @@ namespace pg._226
         {
             return Convert.ToInt32(y * y);
         }
-        public int myAdd(string a)
+        public int myAdd(string a, string b)
         {
             int sub = Convert.ToInt32(a);
-            return sub;
+            int dub = Convert.ToInt32(b);
+            int tub = sub - dub;
+
+            return tub;
         }
     }
 }

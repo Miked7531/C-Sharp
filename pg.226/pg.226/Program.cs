@@ -20,6 +20,8 @@ namespace pg._226
 
             Console.WriteLine("Enter a number: ");
             var a = Console.ReadLine();
+            Console.WriteLine("Enter another number: ");
+            var b = Console.ReadLine();
 
             int result = numb.myAdd(x);
             Console.WriteLine(result);
@@ -27,7 +29,7 @@ namespace pg._226
             int result1 = numb.myAdd(y);
             Console.WriteLine(result1);
 
-            int result2 = numb.myAdd(a);
+            int result2 = numb.myAdd(a,b);
             Console.WriteLine(result2);
 
             Console.ReadLine();
