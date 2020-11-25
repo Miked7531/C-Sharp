@@ -15,6 +15,13 @@ namespace pg._228
             Console.WriteLine("Enter a number: ");
             int userInput = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Enter another number: ");
+            int userInput1 = Convert.ToInt32(Console.ReadLine());
+
+            royal.myOp(userInput, userInput1);
+
+            royal.myOp(x: 3, y: 7);
+            Console.ReadLine();
             
              
 

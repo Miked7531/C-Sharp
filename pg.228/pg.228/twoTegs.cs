@@ -11,10 +11,10 @@ namespace pg._228
     {
         
 
-        static public void myOp(int x = 5, int y = 10)
+        public void myOp(int x, int y)
         {
 
-            if (x + 5 == y)
+            if (x + y == 10)
             {
                 Console.WriteLine("You did it");
             }
@@ -22,6 +22,7 @@ namespace pg._228
             {
                 Console.WriteLine("Better luck next time");
             }
+            Console.WriteLine(y);
 
            
             
