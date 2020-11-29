@@ -12,6 +12,7 @@ namespace pg._244
         {
             Employee staff = new Employee() { FirstName = "Sample", LastName = "Student" };
 
+            staff.Quit();
             staff.SayName();
 
             Console.ReadLine();
