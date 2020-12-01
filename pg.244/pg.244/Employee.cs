@@ -10,8 +10,9 @@ namespace pg._244
     {
         public override void SayName()
         {
-            Console.WriteLine("Name: " + FirstName + " " + LastName);
+            Console.WriteLine("Name: " + FirstName + " " + LastName + " " +"\nID:" + ID);
         }
+        
         public void Quit()
         {
             Console.WriteLine("My name is Jim");
