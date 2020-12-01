@@ -18,13 +18,14 @@ namespace pg._252____overload
         {
             return staff.id == staff1.id;
         }
-        public override bool Equals(object obj)
-        {
-            return id.Equals(obj);
-        }
-        public override int GetHashCode()
-        {
-            return id.GetHashCode();
-        }
+        
+        //public override bool Equals(object staff1)
+        //{
+        //    return id.Equals(staff1);
+        //}
+        //public override int GetHashCode()
+        //{
+        //    return id.GetHashCode();
+        //}
     }
 }
