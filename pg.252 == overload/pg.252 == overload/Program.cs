@@ -11,12 +11,16 @@ namespace pg._252____overload
         static void Main(string[] args)
         {
             Employee staff = new Employee();
+            Employee staff1 = new Employee();
+            Console.WriteLine(staff.id);
+            Console.WriteLine(staff1.id);
 
-            staff.
+            Console.ReadLine();
+
+
             
-        
 
-        
         }
+        
     }
 }

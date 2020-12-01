@@ -6,26 +6,25 @@ using System.Threading.Tasks;
 
 namespace pg._252____overload
 {
-    class Employee : IDMatrix
+    
+    public class Employee 
     {
-        public int z, x, y, w;
-        public Employee(int z, int x, int y, int w)
+        public int id = 1;
+        public static bool operator ==(Employee staff, Employee staff1)
         {
-            this.z = z; this.x = x; this.y = y; this.w = w;
+            return staff.id == staff1.id;
         }
-        IDMatrix m1 = new IDMatrix(20, 10, 14, 10);
-        Employee m2 = new Employee(5, 6, 7, 2);
-
-
-        
-
-        public static bool operator == (IDMatrix m1, Employee m2)
+        public static bool operator !=(Employee staff, Employee staff1)
         {
-            return true;
+            return staff.id == staff1.id;
         }
-        public static bool operator != (IDMatrix m1, Employee m2)
+        public override bool Equals(object obj)
         {
-            return false;
+            return id.Equals(obj);
+        }
+        public override int GetHashCode()
+        {
+            return id.GetHashCode();
         }
     }
 }
