@@ -11,15 +11,15 @@ namespace pg._255_generics
         static void Main(string[] args)
         {
             Employee<string> employee = new Employee<string>();
-            employee.AddOrUpdate(0, "Stuff");
-            employee.AddOrUpdate(1, "Stuff");
-            employee.AddOrUpdate(2, "Stuff");
+            employee.things = "Things";
+            employee.things = "BigThings";
+            
 
             Employee<int> employee1 = new Employee<int>();
-            employee1.AddOrUpdate(0, 50);
-            employee1.AddOrUpdate(1, 69);
-            employee1.AddOrUpdate(2, 69);
+            employee1.things = 69;
+            employee1.things = 10;
 
+            
             
             
             Console.ReadLine();
