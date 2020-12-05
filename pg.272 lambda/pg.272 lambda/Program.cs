@@ -32,11 +32,19 @@ namespace pg._272_lambda
             }
 
 
-            //List<Employee> newList = employees.(y => y.Name == );
+            var result1 = employees.Where(z => z.Name == "Joe").ToList();
+
+            foreach (var employee in result1)
+            {
+                Console.WriteLine(employee.ID + ", " + employee.Name + ", " + employee.Name1);
+            }
 
             var newNumb = employees.Where(z => z.ID > 5).ToList();
 
-            Console.WriteLine(string.Join(System.Environment.NewLine, newNumb));
+            foreach (var emp in newNumb)
+            {
+                Console.WriteLine(emp.ID + ", " + emp.Name + ", " + emp.Name1);
+            }
             
 
             Console.ReadLine();
