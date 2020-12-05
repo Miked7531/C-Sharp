@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace pg._255_generics
 {
-    class Employee<T>
+    public class Employee<T>
     {
-        public T things { get; set; }
+        public List<T> things { get; set; }
 
         
-        
+
     }
 }
