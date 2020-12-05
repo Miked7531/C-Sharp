@@ -28,9 +28,11 @@ namespace pg._261_enums
             }
             try
             {
-                Console.WriteLine("Enter the current day of the week using 1-7: ");
-                string day1 = Console.ReadLine();
-                Days day = (Days)Convert.ToInt32(day1);
+                Console.WriteLine("Enter the current day of the week: ");
+                string userInput = Convert.ToString(Console.ReadLine());
+                var day1 = (Days)Enum.Parse(typeof(Days), userInput);
+                Days day = day1;
+                
                 Console.WriteLine(day);
             }
             catch (Exception)
