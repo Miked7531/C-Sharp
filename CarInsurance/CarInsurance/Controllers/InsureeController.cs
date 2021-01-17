@@ -46,11 +46,70 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType")] Insuree insuree)
         {
             if (ModelState.IsValid)
             {
-                db.Insurees.Add(insuree);
+                {
+                    int bQuote = 50;
+                    DateTime today = DateTime.Now;
+                    //DateTime uDate = today.Date;
+                    insuree.DateOfBirth = insuree.DateOfBirth.Date;
+                    DateTime age = today.AddYears(-insuree.DateOfBirth.Year);
+                    // quote per age
+                    if (age.Year <= 18)
+                    {
+                        insuree.Quote = bQuote + 100;
+                    }
+                    else if (age.Year >= 19 && age.Year <= 25)
+                    {
+                        insuree.Quote = bQuote + 50;
+                    }
+                    else if (age.Year > 25)
+                    {
+                        insuree.Quote = bQuote + 25;
+                    }
+                    // car year quote
+                    if (insuree.Quote <= 2000)
+                    {
+                        insuree.Quote = bQuote + 25;
+                    }
+                    else if (insuree.Quote >= 2015)
+                    {
+                        insuree.Quote = bQuote + 25;
+                    }
+                    // car make/model quote
+                    if (insuree.CarModel == "Porsche")
+                    {
+                        insuree.Quote = bQuote + 25;
+                    }
+                    else if (insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+                    {
+                        insuree.Quote = bQuote + 25;
+                    }
+                    // iteration per speeding ticket
+                    for (int i = 0; i < insuree.SpeedingTickets; i++)
+                    {
+                        insuree.Quote = bQuote + 10;
+                    }
+                    // 25% time baby
+                    if (insuree.DUI == true)
+                    {
+                        double duiCost = bQuote * .25;
+                        int numDCost = Convert.ToInt32(duiCost);
+                        insuree.Quote = bQuote + numDCost;
+                    }
+                    // love their full coverage 50% time
+                    if (insuree.CoverageType == true)
+                    {
+                        double fullCov = bQuote * .50;
+                        int numFullCov = Convert.ToInt32(fullCov);
+                        insuree.Quote = bQuote + numFullCov;
+                    }
+
+                    
+                    }
+                    db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
