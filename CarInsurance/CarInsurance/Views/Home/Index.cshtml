@@ -1,0 +1,51 @@
+﻿@using CarInsurance.Models
+@model Insuree
+<div class="row no-gutters m-3">
+  <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+    <div class="card-header text-center">
+      <h5 class="m-0">Please fill in the information for your insurance quote!</h5>
+    </div>
+    <div class="card-body">
+      @using (Html.BeginForm("Insuree", "Home", FormMethod.Post))
+      {
+      <div class="row no-gutters">
+        <div class="form-group col-md-10">
+          <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="DateOfBirth" type="datetime" class="form-control" placeholder="DateOfBirth" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="Car Year" type="number" class="form-control" placeholder="Car Year" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="Car Make" type="text" class="form-control" placeholder="Car Make" />
+        </div>
+        <div class="form-group col-md-10">
+          <input name="Car Model" type="text" class="form-control" placeholder="Car Model" />
+        </div>
+        <div class="form-group col-md-10">
+          <p class="text-info">Have you had a DUI?</p>
+          <input name="DUI" type="checkbox" class="form-control" value="true" />
+        </div>
+        <div class="form-group col-mid-10">
+          <input name="SpeedingTickets" type="number" class="form-control" placeholder="SpeedingTickets" />
+        </div>
+        <div class="form-group col-mid-10">
+          <span class="text-primary">Full Coverage?</span>
+          <input name="CoverageType" type="radio" class="form-control" value="true" checked/>
+          <span class="text-primary">Liability Coverage?</span>
+          <input name="CoverageType" type="radio" class="form-control" value="false" />
+        </div>
+        <button type="submit" class="btn btn-block btn-primary">Submit</button>
+      </div>
+        }
+      </div>
+  </div>
+</div>
