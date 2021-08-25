@@ -1,0 +1,89 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4075 MB
+    Driver:   27.20.14501.18003
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\miked\Documents\GitHub\C-Sharp-Unity\Pong2D\Pong_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.287 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.804700 ms
+Playgame was pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.750600 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 390.
+Total: 0.170500 ms (FindLiveObjects: 0.016300 ms CreateObjectMapping: 0.009800 ms MarkObjects: 0.136000 ms  DeleteObjects: 0.007700 ms)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Game Won
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.336400 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 298.
+Total: 0.164800 ms (FindLiveObjects: 0.014000 ms CreateObjectMapping: 0.009100 ms MarkObjects: 0.120400 ms  DeleteObjects: 0.020800 ms)
+
+Playgame was pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.309700 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 390.
+Total: 0.260600 ms (FindLiveObjects: 0.036600 ms CreateObjectMapping: 0.011200 ms MarkObjects: 0.198200 ms  DeleteObjects: 0.013300 ms)
+
+Collision with WallLeft
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 3304 -> priority: 1 
+  Thread -> id: 3cb0 -> priority: 1 
+  Thread -> id: 3138 -> priority: 1 
+  Thread -> id: 3bf4 -> priority: 1 
+  Thread -> id: 3dcc -> priority: 1 
+  Thread -> id: 1b34 -> priority: 1 
+  Thread -> id: 3e70 -> priority: 1 
+  Thread -> id: 28ec -> priority: 1 

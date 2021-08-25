@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "PongWeb.data.unityweb",
+"asmCodeUrl": "PongWeb.asm.code.unityweb",
+"asmMemoryUrl": "PongWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "PongWeb.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

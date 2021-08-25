@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "FruitNinjaWeb.data.unityweb",
+"asmCodeUrl": "FruitNinjaWeb.asm.code.unityweb",
+"asmMemoryUrl": "FruitNinjaWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "FruitNinjaWeb.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
