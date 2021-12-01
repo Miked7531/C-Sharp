@@ -1,0 +1,39 @@
+﻿@model IEnumerable<L08HandsOn.Models.Movie>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-white">Movies</h1>
+
+<p>
+    <a asp-action="Create" class="text-white">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+          <th class="text-white">
+            @Html.DisplayNameFor(model => model.MovieTitle)
+            <video id="videoplayer" src="@Url.Content("~/video/starwars.mp4")" controls width="450" height="450" />
+          </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+      @foreach (var item in Model) 
+      {
+        <tr>
+          <td class="text-white">
+            @Html.DisplayFor(modelItem => item.MovieTitle)
+            
+          </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MovieId" class="text-white">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MovieId" class="text-white">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MovieId" class="text-white">Delete</a>
+            </td>
+        </tr>
+      }
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+﻿@model L08HandsOn.Models.Movie
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-white">Create</h1>
+
+<h4 class="text-white">Movie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+      <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-white"></div>
+        <div class="form-group">
+          <label asp-for="MovieTitle" class="control-label text-white"></label>
+          <input asp-for="MovieTitle" class="form-control" />
+          <span asp-validation-for="MovieTitle" class="text-white"></span>
+        </div>
+        <div class="form-group">
+          <label asp-for="PlayMovie" class="control-label text-white"></label>
+          <input asp-for="PlayMovie" class="form-control" value="@Html.Raw(ViewBag.FileName)"/>
+          
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Create" class="btn btn-light" />
+        </div>
+      </form>
+        <form method="post" enctype="multipart/form-data" asp-controller="Movies" asp-action="Index">
+          <span>Select File:</span>
+          <input type="file" name="postedFiles" multiple />
+          <input type="submit" value="Upload" />
+          <br />
+          <span style="color:green">@Html.Raw(ViewBag.Message)</span>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="text-white">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
